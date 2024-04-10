@@ -1,26 +1,54 @@
 <!doctype html>
 <html>
-  <head lang="en">
+<head lang="en">
+
     <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sara Strong</title>
   
-  </head>
+</head>
   <body>
 
-    <div class="ylapainikkeet">
-    <button>Ohjelmat</button>
-    <button>Vinkit</button>
-    <button>Kalenteri</button>
-    <button>Blogi</button>
+<!--Nettisivun ylä osa joka liikkuu mukana kun scrollaat alaspäin-->
+
+   <div class="ylaosa">
+      <h2>Sara Strong(logo)</h2>
+
+      
+       <button class="ylapainikkeet">Blogi</button>
+       <button class="ylapainikkeet">Kalenteri</button>
+       <button class="ylapainikkeet">Ruokavinkit</button>
+       <button class="ylapainikkeet">Ohjelmat</button>
+      
    </div>
-   <div class="main-banner" id="top">
-    <video autoplay muted loop id="bg-video">
-    <source src="images/gym-video.mp4" type="video/mp4" />
-    </video>
-     
-        <div class="video-overlay header-text">
-    <h1>Sara Strong pohja</h1>
-    <p>Etusivun pohja</p>
+
+<!--Nettisivun Etusivu-->
+
+    <div class="etusivu">
+
     
+     <video src="images/gym-video.mp4" autoplay loop playsinline muted></video>
+     
+    <div class="overlay">
+      <div class="Etusivuteksti">
+        <h1>Sara Strong etusivu</h1>
+      </div>
+    </div>
+
+   </div>
+
+<!--Ohjelmat kohta mistä löydät videot ja vinkit erillaisiin liikkeisiin-->
+
+   <div class="ohjelmat">
+    <h2 class="ohjelmatIsoTeksti">Ohjelmat</h2>
+   </div>
+
+<!--Ruokavinkit ja reseptit-->
+
+<div class="Ruokavinkit">
+<h2 class="ruokavinkitIsoTeksti">Ruokavinkit ja reseptit</h2>
+</div>
+
   </body>
 </html>
