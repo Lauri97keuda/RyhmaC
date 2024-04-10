@@ -9,3 +9,16 @@ h1{
 div.ylapainikkeet {
     text-align: right;
 }
+
+.main-banner {
+    background: linear-gradient(45deg, #ffa500, #4c9a2a)
+}
+
+video {
+    opacity: 25%;
+    position: fixed;
+  size-adjust: 10;
+  max-width: 125%;
+  max-height: 125%;
+
+}
