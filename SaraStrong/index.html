@@ -10,26 +10,41 @@
 </head>
   <body>
 
-<!--Nettisivun ylä osa joka liikkuu mukana kun scrollaat alaspäin (ei toimi vielä)-->
+<!--Nettisivun yläosa-->
 
-   <div class="ylaosa">
-      <h2>Sara Strong(logo)</h2>
+<nav>
+  <ul class="sidebar">
+    <li onclick=hideSidebar()><a href="#1"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="#2">Ohjelmat</a></li>
+    <li><a href="#3">Ruokavinkit</a></li>
+    <li><a href="#4">Kalenteri</a></li>
+    <li><a href="#5">Blogi</a></li>
+  </ul>
+  <ul>
+    <li><a href="#1">Sara Strong(logo)</a></li>
+    <li class="hideOnMobile"><a href="#2">Ohjelmat</a></li>
+    <li class="hideOnMobile"><a href="#3">Ruokavinkit</a></li>
+    <li class="hideOnMobile"><a href="#4">Kalenteri</a></li>
+    <li class="hideOnMobile"><a href="#5">Blogi</a></li>
+    <li class="menu-button" onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
+</nav>
 
-      
-       <button class="ylapainikkeet">Blogi</button>
-       <button class="ylapainikkeet">Kalenteri</button>
-       <button class="ylapainikkeet">Ruokavinkit</button>
-       <button class="ylapainikkeet">Ohjelmat</button>
-      
-   </div>
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
 
 <!--Nettisivun Etusivu-->
 
   <div class="etusivu">
-
-    
-     <video src="images/gym-video.mp4" autoplay loop playsinline muted></video>
-     
+    <video src="images/gym-video.mp4" autoplay loop playsinline muted></video>
     <div class="overlay">
       <div class="Etusivuteksti">
         <h1>Sara Strong</h1>
