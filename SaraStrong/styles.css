@@ -81,7 +81,7 @@ nav li:first-child{
 
 
 .Etusivuteksti {
-    font-size: 50px;
+    font-size: 4vw;
     text-align: center;
   }
 
@@ -137,6 +137,7 @@ div.ohjelmat{
 .ohjeteksti{
     min-width: 10vw;
     max-width: 20vw;
+    font-size: 0.9vw;
     max-height: auto;
     overflow: hidden;
 }
@@ -267,7 +268,11 @@ div.Ruokavinkit {
 }
 .ruokavinkitIsoTeksti {
     text-align: center;
+
+
 }
+
+
 /*Kalenteri*/
 
 div.Kalenteri {
