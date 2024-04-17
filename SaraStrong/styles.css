@@ -9,6 +9,11 @@ body{
 
 }
 
+header{
+    border: solid black;
+    margin-bottom: 15px;
+}
+
 /* yläosa */
 
 nav{
@@ -56,7 +61,7 @@ nav li:first-child{
     background-color: rgba(129, 205, 83, 0.705);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display:none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
@@ -122,12 +127,10 @@ div.ohjelmat{
 
 .ohjelmatIsoTeksti{
     text-align: center;
-    border: solid black;
-    margin-bottom: 15px;
+
     
 
 }
-
 
 /* kaikki kuvat mitä käytetään ohjelma sivulla*/
 .kuva1, .kuva2, .kuva3, .kuva4, .kuva5, .kuva6 {
@@ -303,18 +306,17 @@ div.Blogi{
     text-align: center;
 }
 /* media */
-@media (max-width: 800px){
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-button{
-        display: block;
-    }
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
 }
-
-
-@media (max-width: 400px){
-    .sidebar{
-        width: 100%;
-    }
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
 }
