@@ -143,6 +143,7 @@ div.ohjelmat{
 /* kaikki tekstit mitä käytetään ohjelmat sivulla*/
 .ohjeteksti{
     font-family: sans-serif;
+    padding-bottom: 10px;
 
 }
 
