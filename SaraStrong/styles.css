@@ -204,7 +204,7 @@ div.Ruokavinkit {
 
 .reseptit{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(400px,32%));
+    grid-template-columns:repeat(auto-fit, minmax(375px,32%));
     grid-column: 2;
     gap: 1rem;
     align-self: center;
