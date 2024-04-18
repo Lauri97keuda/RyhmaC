@@ -216,6 +216,7 @@ ul{
 
 .reseptiteksti {
     text-align: left;
+    max-width: 350px;
     
 }
 
