@@ -102,7 +102,7 @@ nav li:first-child{
 }
 
 div.etusivu {
-height: 1000px;
+height: 100vh;
 
 }
 
@@ -153,6 +153,7 @@ div.ohjelmat{
     display: block;
 }
 /* kaikki tekstit mitä käytetään ohjelmat sivulla*/
+
 .ohjeteksti{
     font-family: sans-serif;
     padding-bottom: 10px;
@@ -168,115 +169,6 @@ div.ohjelmat{
     align-self: center;
       
 }
-/* koitin keskittää luvat tällä mutta en löytänyt miten se tehtäisiin 
-.grid-item img{
-     
-}*/
-
-/* kuvat ohjeisiin 1-6
-.kuva1 {
-    left:50px;
-    top: 1200px;
-    position:absolute
-}
-
-.kuva2 {
-    left: 50px;
-    top: 1450px;
-    position:absolute;
-}
-
-.kuva3 {
-    left: 50px;
-    top: 1700px;
-    position:absolute;
-}
-
-.kuva4 {
-    left:700px;
-    top: 1200px;
-    position:absolute
-}
-
-.kuva5 {
-    left:700px;
-    top: 1450px;
-    position:absolute
-}
-
-.kuva6 {
-    left:700px;
-    top: 1700px;
-    position:absolute
-}
-/* iso teksti ohjeisiin 1-6
-.ohje1 {
-    top: 1200px;
-    left: 275px;
-    position: absolute
-} 
-
-.ohje2 {
-    top: 1450px;
-    left: 275px;
-    position: absolute;
-} 
-
-.ohje3 {
-    top: 1700px;
-    left: 275px;
-    position: absolute;
-} 
-
-.ohje4 {
-    top: 1200px;
-    left: 925px;
-    position: absolute
-} 
-
-.ohje5 {
-    top: 1450px;
-    left: 925px;
-    position: absolute
-} 
-
-.ohje6 {
-    top: 1700px;
-    left: 925px;
-    position: absolute
-} 
-/* pieniteksti ohjeisiin 1-6
-.ohjeselitys1 {
-    top: 1225px;
-    left: 275px;
-    position: absolute;
-}
-.ohjeselitys2 {
-    top: 1475px;
-    left: 275px;
-    position: absolute;
-}
-.ohjeselitys3 {
-    top: 1725px;
-    left: 275px;
-    position: absolute;
-}
-.ohjeselitys4 {
-    top: 1225px;
-    left: 925px;
-    position: absolute;
-}
-.ohjeselitys5 {
-    top: 1475px;
-    left: 925px;
-    position: absolute;
-}
-.ohjeselitys6 {
-    top: 1725px;
-    left: 925px;
-    position: absolute;
-}
-*/
 
 
 /* ruokavinkit ja reseptit */
@@ -292,14 +184,18 @@ div.Ruokavinkit {
 
 }
 .reseptikuva{
-    max-width: 400px;
+    max-width: 375px;
     display: block;
     margin-bottom: 25px;
 
 }
-
+.ruokaVideo{
+    max-width: 375px;
+    margin-bottom: 25px;
+}
 .reseptiIsoTeksti{
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .ravitsemusvinkit{
@@ -336,6 +232,8 @@ div.Kalenteri {
 }
 
 /*Blogi*/
+
+
 div.Blogi{
     height: 920px;
     max-width: 100vw;
@@ -344,6 +242,8 @@ div.Blogi{
 .blogiIsoTeksti{
     text-align: center;
 }
+
+
 /* media */
 
 @media(max-width: 800px){
