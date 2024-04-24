@@ -176,7 +176,7 @@ div.ohjelmat{
 div.Ruokavinkit {
     
     max-width: 100vw;
-    background: linear-gradient(100%, #b17c1b, #77ee45)
+    background: linear-gradient(100%, #b17c1b, #77ee45);
 }
 .ruokavinkitIsoTeksti {
     text-align: center;
@@ -208,6 +208,8 @@ div.Ruokavinkit {
     grid-column: 2;
     gap: 1rem;
     align-self: center;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 ul{
@@ -226,12 +228,55 @@ ul{
 div.Kalenteri {
     height: 920px;
     max-width: 100vw;
-
+ 
 }
-
+ 
 .kalenteriIsoTeksti{
     text-align: center;
 }
+.Yläkalenteri{
+    display: flex;
+    flex-direction: left;
+    margin-bottom: 25px;
+}
+.Kalenterikuva{
+    max-width: 250px;
+    height: auto;
+    padding-right: 25px;
+    max-height: 30vh;
+}
+.teksti p{
+    font-size: 0.5rem;
+    padding: 10px;
+ 
+}
+ .calendar {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ .event {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    margin: 20px 0;
+ }
+ .event:last-child {
+    border-bottom: none;
+ }
+ .calendar h1 {
+    color: #111111;
+    text-align: center;
+ }
+ .calendar h2 {
+    color: #111111;
+ }
+ .calendar p {
+    color: #111111;
+    line-height: 1.6;
+ }
 
 /*Blogi*/
 
