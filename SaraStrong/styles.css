@@ -199,7 +199,7 @@ div.Ruokavinkit {
 }
 .reseptikuva{
     height: 250px;
-    width: 350px;
+    width: 325px;
     max-width: 350px;
     max-height: auto;
     display: block;
@@ -209,7 +209,7 @@ div.Ruokavinkit {
 
 }
 .ruokaVideo{
-    width: 350px;
+    width: 325px;
     height: 250px;
     max-width: 350px;
     max-height: auto;
@@ -243,7 +243,7 @@ ul{
 
 .reseptiteksti {
     text-align: left;
-    max-width: 350px;
+    max-width: 325px;
     
 }
 
