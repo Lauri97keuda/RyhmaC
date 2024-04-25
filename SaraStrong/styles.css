@@ -276,7 +276,8 @@ div.Kalenteri {
  
 }
  .calendar {
-    max-width: 800px;
+    max-width: 50vw;
+    height: auto;
     margin: auto;
     margin-top: 40px;
     padding: 20px;
