@@ -114,7 +114,7 @@ height: 100vh;
 
 .etusivuVideo {
     object-fit: fill;
-    width: 99vw;
+    width: 100%;
     height: 100vh;
     max-height: 950px;
     position: relative;
@@ -198,10 +198,10 @@ div.Ruokavinkit {
 
 }
 .reseptikuva{
-    height: 250px;
     width: 325px;
     max-width: 350px;
-    max-height: auto;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin-bottom: 25px;
     margin-top: 25px;
@@ -252,7 +252,7 @@ ul{
 
 div.Kalenteri {
     height: 920px;
-    max-width: 100vw;
+    width: 100%;
  
 }
  
@@ -403,6 +403,34 @@ div.Kalenteri {
   .sidebar{
     width: 100%;
   }
+  .reseptikuva{
+    width: 250px;
+    max-width: 250px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    object-fit: cover;
+
+}
+.ruokaVideo{
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    max-height: auto;
+    object-fit: cover;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.reseptit{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(375px,32%));
+    grid-column: 2;
+    gap: 1rem;
+    align-self: center;
+   
+}
 }
 @media(max-width:1250px){
     .blog-box{
