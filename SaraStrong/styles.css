@@ -10,13 +10,19 @@ body{
 }
 
 header{
-    border: solid black;
+    border-bottom: #111111;
     margin-bottom: 15px;
     margin-top: 25px;
 }
 
 /* yläosa */
-
+.logo{
+    width:100px;
+    height: 49px;
+    display: block;
+    object-fit: cover;
+    opacity: 75%;
+}
 nav{
     background-color: rgb(129, 207, 83);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -167,7 +173,15 @@ div.ohjelmat{
     grid-column: 2;
     gap: 1rem;
     align-self: center;
+    justify-content: center;
       
+}
+.grid-item img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
 
@@ -184,14 +198,24 @@ div.Ruokavinkit {
 
 }
 .reseptikuva{
-    max-width: 375px;
+    height: 250px;
+    width: 350px;
+    max-width: 350px;
+    max-height: auto;
     display: block;
     margin-bottom: 25px;
+    margin-top: 25px;
+    object-fit: cover;
 
 }
 .ruokaVideo{
-    max-width: 375px;
+    width: 350px;
+    height: 250px;
+    max-width: 350px;
+    max-height: auto;
+    object-fit: cover;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 .reseptiIsoTeksti{
     margin-bottom: 10px;
@@ -210,6 +234,7 @@ div.Ruokavinkit {
     align-self: center;
     margin-left: 45px;
     margin-right: 45px;
+   
 }
 
 ul{
