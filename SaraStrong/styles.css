@@ -1,30 +1,32 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Добавлено для лучшего управления размерами */
 }
-
 body{
-    background: linear-gradient(100deg, #ffa500, #4c9a2a);
-    
-
+    background: linear-gradient(100deg, #e6c589, #262925);  /* Добавлено для красивого шрифта */
+}
+    font-family: 'Arial', sans-serif; /* Добавлено для красивого шрифта */
 }
 
 header{
-    border-bottom: #111111;
+    border-bottom: 1px solid #111111; /* Исправлено  */
     margin-bottom: 15px;
     margin-top: 25px;
 }
 
+/* yläosa */
 /* yläosa */
 .logo{
     width:100px;
     height: 49px;
     display: block;
     object-fit: cover;
-    opacity: 75%;
+    opacity: 0.75; /* Исправлено для корректного отображения прозрачности */
 }
+
 nav{
-    background-color: rgb(129, 207, 83);
+    background-color: #000000; /* Изменено для спокойных оливковых тонов */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -47,9 +49,8 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: #ffa500; /* Изменено для спокойных оранжевых тонов */
 }
-
 nav a:hover{
     background-color: rgba(214, 159, 56, 0.438);
 }
@@ -93,11 +94,24 @@ nav li:first-child{
 /* etusivu */
 
 
-.Etusivuteksti {
-    font-size: 4vw;
-    text-align: center;
+a {
+    text-decoration: none !important;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  ul {
+    margin-bottom: 0px;
   }
 
+  p {
+    font-size: 14px;
+    line-height: 50px;
+    color: #7a7a7a;
+  }
 .overlay {
     position: absolute;
     top: 50%;
@@ -452,3 +466,75 @@ div.Kalenteri {
         padding: 20px;
     }
 }
+features
+---------------------------------------------
+*/
+#features {
+  margin-bottom: 80px;
+}
+
+.feature-item {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+
+.feature-item .left-icon img {
+  float: left;
+  margin-right: 30px;
+  width: 100px; /* Устанавливаем фиксированную ширину */
+  height: 100px; /* Устанавливаем фиксированную высоту */
+}
+
+
+.feature-item .right-content {
+    display: inline;
+  }
+  
+  .feature-item .right-content h4 {
+    margin-top: 0px;
+    margin-bottom:  7px;
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .feature-item .right-content a.text-button {
+    margin-top: 7px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color:#ffa500; /* Цвет кнопки */
+    font-weight: 500;
+  }
+  
+  /* Скрыть модальное окно по умолчанию */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  /* Оформление содержимого модального окна */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Закрывающая кнопка */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
