@@ -390,6 +390,77 @@ div.Kalenteri {
     transition: all ease 0.3s;
     
 }
+/*FOOTER*/
+.footerContainer{
+    background-color: #493b2248;
+
+}
+.footer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(375px,32%));
+    grid-column: 2;
+    gap: 1rem;
+    align-self: center;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.grid-footer{
+    align-items: top center;
+    justify-content: top center;
+    display: flex;
+    
+}
+.footerIsoTeksti{
+    font-size: 45px;
+    padding-left: 25px;
+}
+.infoPieniTeksti{
+    font-size: 20px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+.yhteystiedotPieniTeksti{
+    font-size: 20px;
+    padding-left: 25px;
+}
+.aukioloajatPieniTeksti{
+    font-size: 20px;
+    padding-left: 25px;
+}    
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover{
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-linkedin{
+    background: #2f85c7;
+    color: white;
+  }
+  .fa-instagram{
+    background: #106db4;
+    color: white;
+  }
+
 /* media */
 
 @media(max-width: 800px){
@@ -399,6 +470,9 @@ div.Kalenteri {
   .menu-button{
     display: block;
   }
+  .infoPieniTeksti{
+    max-width: 200px;
+}
 }
 @media(max-width: 400px){
   .sidebar{
@@ -426,12 +500,22 @@ div.Kalenteri {
 }
 .reseptit{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(375px,32%));
+    grid-template-columns:repeat(auto-fit, minmax(350px,32%));
     grid-column: 2;
     gap: 1rem;
     align-self: center;
    
 }
+.footer{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(350px,32%));
+    grid-column: 2;
+    gap: 1rem;
+    align-self: center;
+    
+  
+}
+
 }
 @media(max-width:1250px){
     .blog-box{
