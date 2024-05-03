@@ -390,9 +390,12 @@ div.Kalenteri {
     transition: all ease 0.3s;
     
 }
+
 /*FOOTER*/
 .footerContainer{
-    background-color: #493b2248;
+    background-color: #110d0679;
+    font-family: Poppins;
+    
 
 }
 .footer{
