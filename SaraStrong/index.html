@@ -1,36 +1,46 @@
 <!doctype html>
 <html>
 <head lang="en">
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sara Strong</title>
-  <script src="Sara strong.js"></script>
+    <script src="Sara strong.js" defer></script>
 </head>
-  <body>
-
-<!--Nettisivun yläosa-->
-
+<body>
 <nav>
-  <ul class="sidebar">
-    <li onclick=hideSidebar()><a href="#1"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-    <li><a href="#Ohjelmat">Ohjelmat</a></li>
-    <li><a href="#Ruokavinkit">Ruokavinkit</a></li>
-    <li><a href="#Kalenteri">Kalenteri</a></li>
-    <li><a href="#Blogi">Blogi</a></li>
-  </ul>
-  <ul>
-    <li><a href="#1"><img src="images/SaraStrongLogo.png" class="logo"></a></li>
-    <li class="hideOnMobile"><a href="#Ohjelmat">Ohjelmat</a></li>
-    <li class="hideOnMobile"><a href="#Ruokavinkit">Ruokavinkit</a></li>
-    <li class="hideOnMobile"><a href="#Kalenteri">Kalenteri</a></li>
-    <li class="hideOnMobile"><a href="#Blogi">Blogi</a></li>
-    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-  </ul>
+    <ul class="sidebar">
+        <li onclick="closeSidebar()">
+            <a href="#1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </a>
+        </li>
+        <li><a href="#Ohjelmat">Ohjelmat</a></li>
+        <li><a href="#Ruokavinkit">Ruokavinkit</a></li>
+        <li><a href="#Kalenteri">Kalenteri</a></li>
+        <li><a href="#Blogi">Blogi</a></li>
+    </ul>
+    <ul class="main-menu">
+        <li><a href="#1"><img src="images/SaraStrongLogo.png" class="logo"></a></li>
+        <li class="hideOnMobile"><a href="#Ohjelmat">Ohjelmat</a></li>
+        <li class="hideOnMobile"><a href="#Ruokavinkit">Ruokavinkit</a></li>
+        <li class="hideOnMobile"><a href="#Kalenteri">Kalenteri</a></li>
+        <li class="hideOnMobile"><a href="#Blogi">Blogi</a></li>
+        <li class="menu-button" onclick="openSidebar()">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a>
+        </li>
+    </ul>
 </nav>
+
+
 
 <!--Nettisivun Etusivu-->
 

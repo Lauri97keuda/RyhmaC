@@ -1,48 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Poppins;
 }
 
-body{
+body {
     background: linear-gradient(100deg, #ffa500, #4c9a2a);
-    
-
+    margin: 0;
 }
 
-header{
-    border-bottom: #111111;
-    margin-bottom: 15px;
-    margin-top: 25px;
-}
-
-/* yläosa */
-.logo{
-    width:100px;
-    height: 49px;
-    display: block;
-    object-fit: fill;
-    opacity: 75%;
-}
-nav{
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: rgb(145, 201, 112);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
-nav ul{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0 10px;
 }
 
 nav li {
     height: 50px;
-
 }
 
-nav a{
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -51,15 +40,23 @@ nav a{
     color: black;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: rgba(214, 159, 56, 0.438);
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
 }
 
-.sidebar{
+.logo {
+    width: 100px;
+    height: 49px;
+    display: block;
+    object-fit: fill;
+    opacity: 75%;
+}
+
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -69,24 +66,34 @@ nav li:first-child{
     background-color: rgba(129, 205, 83, 0.705);
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display:none;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
+    padding-top: 60px;
 }
 
-.sidebar li{
-    width: 100%;
-
-}
-
-.sidebar a{
+.sidebar li {
     width: 100%;
 }
 
-.menu-button{
+.sidebar a {
+    width: 100%;
+    padding: 15px;
+}
+
+.menu-button {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
 }
 
 
