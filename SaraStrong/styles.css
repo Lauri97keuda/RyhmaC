@@ -282,7 +282,7 @@ ul{
 
 .reseptiteksti {
     text-align: left;
-    max-width: 325px;
+    max-width: 300px;
     
 }
 
@@ -493,7 +493,7 @@ div.Kalenteri {
 }
 .footer{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(375px,32%));
+    grid-template-columns:repeat(auto-fit, minmax(350px,32%));
     grid-column: 2;
     gap: 1rem;
     align-self: center;
@@ -611,6 +611,12 @@ div.Kalenteri {
     margin-top: 25px;
     object-fit: cover;
 
+}
+.kalenteriIsoTeksti{
+    text-align: center;
+    max-width: 200px;
+    font-size: 25px;
+    
 }
 .ruokaVideo{
     width: 250px;
