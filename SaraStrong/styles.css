@@ -598,12 +598,21 @@ div.Kalenteri {
 }
 }
 @media(max-width: 400px){
+  .footer{
+        display: grid;
+        grid-template-columns:repeat(auto-fit, minmax(325px,32%));
+        grid-column: 2;
+        gap: 1rem;
+        align-self: center;
+        margin-left: 45px;
+        margin-right: 0px;
+}
   .sidebar{
     width: 100%;
   }
   .reseptikuva{
-    width: 250px;
-    max-width: 250px;
+    width: 225px;
+    max-width: 225px;
     max-width: 100%;
     height: auto;
     display: block;
@@ -614,14 +623,14 @@ div.Kalenteri {
 }
 .kalenteriIsoTeksti{
     text-align: center;
-    max-width: 200px;
+    max-width: 175px;
     font-size: 25px;
     
 }
 .ruokaVideo{
-    width: 250px;
-    height: 250px;
-    max-width: 250px;
+    width: 225px;
+    height: 225px;
+    max-width: 225px;
     max-height: auto;
     object-fit: cover;
     margin-bottom: 25px;
@@ -629,7 +638,7 @@ div.Kalenteri {
 }
 .reseptit{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(350px,32%));
+    grid-template-columns:repeat(auto-fit, minmax(300px,32%));
     grid-column: 2;
     gap: 1rem;
     align-self: center;
@@ -637,7 +646,7 @@ div.Kalenteri {
 }
 .footer{
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(350px,32%));
+    grid-template-columns:repeat(auto-fit, minmax(300px,32%));
     grid-column: 2;
     gap: 1rem;
     align-self: center;
