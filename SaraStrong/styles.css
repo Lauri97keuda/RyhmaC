@@ -408,10 +408,7 @@ div.Kalenteri {
     font-weight: 500;
     color:#272727;
 }
-.blog-text .blog-title:hover{
-    color: #f33c3c;
-    transition: all ease 0.3s;
-}
+
 .blog-text p{
     color: #100505;
     font-size: 0.9rem;
@@ -425,11 +422,7 @@ div.Kalenteri {
 .blog-text a{
     color: #0f0f0f;
 }
-.blog-text a:hover{
-    color:#f33c3c;
-    transition: all ease 0.3s;
-    
-}
+
 .modal {
     display: none; 
     position: fixed;
@@ -477,7 +470,7 @@ div.Kalenteri {
     cursor: pointer;
 }
 
-.close:hover,
+
 .close:focus {
     color: #000;
     text-decoration: none;
